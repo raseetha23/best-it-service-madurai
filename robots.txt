@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://raseetha23.github.io/best-it-service-madurai/sitemap.xml
