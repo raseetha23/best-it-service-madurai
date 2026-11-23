@@ -1,53 +1,71 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background: #f4f8ff;
+    background-color: #f4f7ff;
     color: #222;
+    line-height: 1.6;
 }
 
+/* Header */
 header {
-    background: #123c69;
+    background-color: #163f68;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 25px;
 }
 
+header h2 {
+    margin-bottom: 10px;
+}
+
+/* Navigation */
 nav {
-    background: #0b2545;
-    padding: 15px;
+    background-color: #0c2542;
     text-align: center;
+    padding: 12px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 15px;
+    margin: 0 15px;
+    font-weight: bold;
 }
 
+nav a:hover {
+    color: #70d6ff;
+}
+
+/* Home */
 .container {
     text-align: center;
-    padding: 60px 20px;
+    padding: 65px 20px;
 }
 
-h1 {
-    color: #123c69;
-    font-size: 38px;
-    margin-bottom: 20px;
+.container h1 {
+    color: #163f68;
+    font-size: 36px;
+    margin-bottom: 15px;
 }
 
-h2 {
-    margin: 20px 0;
-    color: #123c69;
+/* Services */
+#services {
+    text-align: center;
+    padding: 35px 20px;
 }
 
-p {
-    line-height: 1.8;
+#services h2 {
+    color: #163f68;
+    margin-bottom: 35px;
 }
 
 .services {
@@ -55,25 +73,69 @@ p {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 30px;
 }
 
 .card {
     background: white;
-    padding: 30px;
     width: 250px;
+    padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px #0002;
-    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
 }
 
+/* About */
+#about {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#about h2 {
+    color: #163f68;
+    margin-bottom: 15px;
+}
+
+/* Contact */
+#contact {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#contact h2 {
+    color: #163f68;
+    margin-bottom: 15px;
+}
+
+/* Footer */
 footer {
-    background: #123c69;
+    background-color: #163f68;
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+    nav a {
+        margin: 0 7px;
+        font-size: 14px;
+    }
+
+    .container h1 {
+        font-size: 27px;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
 }
