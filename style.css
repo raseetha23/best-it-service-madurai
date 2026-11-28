@@ -156,33 +156,34 @@ footer {
     background-color: #128C7E;
 }
 
-
-.service-icon {
-    width: 140px;
-    height: 140px;
+    
+.services .card .service-icon {
+    width: 130px;
+    height: 130px;
     margin: 0 auto 25px;
-    border-radius: 28px;
+    border-radius: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 75px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+    font-size: 65px;
+    background: linear-gradient(135deg, #60a5fa, #7c3aed);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.services .card:hover .service-icon {
+    transform: scale(1.1);
     transition: 0.4s;
 }
 
-.card:hover .service-icon {
-    transform: scale(1.1) rotate(3deg);
-}
-
-.web-icon {
+.services .card .web-icon {
     background: linear-gradient(135deg, #60a5fa, #6366f1);
 }
 
-.software-icon {
+.services .card .software-icon {
     background: linear-gradient(135deg, #a78bfa, #7c3aed);
 }
 
-.marketing-icon {
+.services .card .marketing-icon {
     background: linear-gradient(135deg, #38bdf8, #2563eb);
 }
 }
